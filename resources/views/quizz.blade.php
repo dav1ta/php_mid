@@ -10,7 +10,7 @@
         @foreach ($questions as $question)
         <div class="box-body ">
 
-            <p>აქ იქნება შეკითხვა</p>
+            <p>{{$question->question}}</p>
 
 
             @foreach($question -> answers  as $answer)

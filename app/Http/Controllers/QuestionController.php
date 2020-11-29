@@ -40,7 +40,7 @@ class QuestionController extends Controller
         $answer4_true=count($answer2)===2;
 
 
-        $question_rec = new Question(['question'=>$question[0]]);
+        $question_rec = new Question(['question'=>$question]);
         $question_rec -> save();
         $answer1_rec=new Answer(['answer'=>$answer1[0],'is_true'=>$answer1_true,'question_id'=>$question_rec->id]);
         $answer1_rec->save();
